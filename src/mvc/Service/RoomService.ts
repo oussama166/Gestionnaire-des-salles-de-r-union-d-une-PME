@@ -15,7 +15,7 @@ export default class RoomService {
     );
 
     if (existingRoom) {
-      return `Room already exists with Name ${existingRoom.roomName}`;
+      return `Room already exist with Name : ${existingRoom.roomName}`;
     }
     const data = JSON.parse(roomData);
     const newRoom = await this.roomRepository.createRoom(data);

@@ -23,17 +23,16 @@ model Room {
   modiedAt  DateTime @updatedAt
 
   equipement EQUIPEMENT[]
-  room_state ROOM_STATE @default(OPEN)
+  room_state ROOM_STATE   @default(OPEN)
 }
 
-
 model Meeting {
-  id           String        @id @default(auto()) @map("_id") @db.ObjectId
-  meetingName  String        @unique
-  startDate    DateTime
-  endDate      DateTime
-  typeMeeting  TYPE_MEEETING
-  persnalNumber Int
+  id             String        @id @default(auto()) @map("_id") @db.ObjectId
+  meetingName    String        @unique
+  startDate      DateTime
+  endDate        DateTime
+  typeMeeting    TYPE_MEEETING
+  personalNumber Int
 }
 
 enum ROOM_STATE {
