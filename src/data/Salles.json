@@ -1,0 +1,74 @@
+[
+  {
+    "roomName": "E1001",
+    "max_capacity": 23,
+    "equipement": ["Neant"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E1002",
+    "max_capacity": 10,
+    "equipement": ["Ecran"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E1003",
+    "max_capacity": 8,
+    "equipement": ["Pieuvre"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E1004",
+    "max_capacity": 4,
+    "equipement": ["Tableau"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E2001",
+    "max_capacity": 4,
+    "equipement": ["Neant"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E2002",
+    "max_capacity": 15,
+    "equipement": ["Ecran", "Webcam"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E2003",
+    "max_capacity": 7,
+    "equipement": ["Neant"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E2004",
+    "max_capacity": 9,
+    "equipement": ["Tableau"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E3001",
+    "max_capacity": 13,
+    "equipement": ["Ecran", "Webcam", "Pieuvre"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E3002",
+    "max_capacity": 8,
+    "equipement": ["Neant"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E3003",
+    "max_capacity": 9,
+    "equipement": ["Ecran", "Pieuvre"],
+    "room_state": "OPEN"
+  },
+  {
+    "roomName": "E3004",
+    "max_capacity": 4,
+    "equipement": ["Neant"],
+    "room_state": "OPEN"
+  }
+]

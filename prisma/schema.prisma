@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Room {
+  id           String  @id @default(auto()) @map("_id") @db.ObjectId
+  roomName     String  @unique
+  max_capacity Int
+  isReserved   Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  modiedAt  DateTime @updatedAt
+
+  equipement EQUIPEMENT[]
+  room_state ROOM_STATE @default(OPEN)
+}
+
+
+model Meeting {
+  id           String        @id @default(auto()) @map("_id") @db.ObjectId
+  meetingName  String        @unique
+  startDate    DateTime
+  endDate      DateTime
+  typeMeeting  TYPE_MEEETING
+  persnalNumber Int
+}
+
+enum ROOM_STATE {
+  OPEN
+  PENDING
+  CLOSE
+}
+
+enum EQUIPEMENT {
+  Ecran
+  Pieuvre
+  Tableau
+  Neant
+  Webcam
+}
+
+enum TYPE_MEEETING {
+  VC
+  SPEC
+  RS
+  RC
+}
