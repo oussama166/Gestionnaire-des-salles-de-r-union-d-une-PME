@@ -19,11 +19,14 @@ model Room {
   max_capacity Int
   isReserved   Boolean @default(false)
 
+  seventyPercent Int?
+
   createdAt DateTime @default(now())
   modiedAt  DateTime @updatedAt
 
-  equipement EQUIPEMENT[]
-  room_state ROOM_STATE   @default(OPEN)
+  equipement  EQUIPEMENT[]
+  room_state  ROOM_STATE    @default(OPEN)
+  Reservation Reservation[]
 }
 
 model Meeting {
@@ -33,6 +36,22 @@ model Meeting {
   endDate        DateTime
   typeMeeting    TYPE_MEEETING
   personalNumber Int
+  Reservation    Reservation[]
+
+  createdAt DateTime @default(now())
+  modiedAt  DateTime @updatedAt
+  
+}
+
+model Reservation {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  room        Room    @relation(fields: [roomName], references: [roomName])
+  roomName    String
+  meeting     Meeting @relation(fields: [meetingName], references: [meetingName])
+  meetingName String
+
+  createdAt DateTime @default(now())
+  modiedAt  DateTime @updatedAt
 }
 
 enum ROOM_STATE {

@@ -1,5 +1,5 @@
 import { Meeting } from "@prisma/client";
-import { prisma } from "../../../../prisma/prisma";
+import  {prisma}  from "../../../../prisma/prisma";
 import { IMeetingRepository } from "./Interface/IMeetingRepository";
 
 export class PrismaMeetingRepository implements IMeetingRepository {

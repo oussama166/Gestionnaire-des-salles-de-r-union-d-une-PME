@@ -4,7 +4,7 @@ import { PrismaMeetingRepository } from "../Service/Repository/PrismaMeetingRepo
 import { handleErrorResponse } from "../../utils/utilsFunc";
 
 const meetingRepository = new PrismaMeetingRepository();
-const meetingService = new MeetingService(meetingRepository);
+const meetingService = new MeetingService(meetingRepository); 
 
 export const createMeeting = async (req: Request, res: Response) => {
   try {

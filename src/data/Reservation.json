@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Réunion 1",
+    "start": "9h",
+    "end": "10h",
+    "location": "VC",
+    "participants": "8"
+  },
+  {
+    "name": "Réunion 2",
+    "start": "9h",
+    "end": "10h",
+    "location": "VC",
+    "participants": "6"
+  },
+  {
+    "name": "Réunion 3",
+    "start": "11h",
+    "end": "12h",
+    "location": "RC",
+    "participants": "4"
+  },
+  {
+    "name": "Réunion 4",
+    "start": "11h",
+    "end": "12h",
+    "location": "RS",
+    "participants": "2"
+  },
+  {
+    "name": "Réunion 5",
+    "start": "11h",
+    "end": "12h",
+    "location": "SPEC",
+    "participants": "9"
+  },
+  {
+    "name": "Réunion 6",
+    "start": "9h",
+    "end": "10h",
+    "location": "RC",
+    "participants": "7"
+  },
+  {
+    "name": "Réunion 7",
+    "start": "8h",
+    "end": "9h",
+    "location": "VC",
+    "participants": "9"
+  },
+  {
+    "name": "Réunion 8",
+    "start": "8h",
+    "end": "9h",
+    "location": "SPEC",
+    "participants": "10"
+  },
+  {
+    "name": "Réunion 9",
+    "start": "9h",
+    "end": "10h",
+    "location": "SPEC",
+    "participants": "5"
+  },
+  {
+    "name": "Réunion 10",
+    "start": "9h",
+    "end": "10h",
+    "location": "RS",
+    "participants": "4"
+  },
+  {
+    "name": "Réunion 11",
+    "start": "9h",
+    "end": "10h",
+    "location": "RC",
+    "participants": "8"
+  },
+  {
+    "name": "Réunion 12",
+    "start": "11h",
+    "end": "12h",
+    "location": "VC",
+    "participants": "12"
+  },
+  {
+    "name": "Réunion 13",
+    "start": "11h",
+    "end": "12h",
+    "location": "SPEC",
+    "participants": "5"
+  },
+  {
+    "name": "Réunion 14",
+    "start": "8h",
+    "end": "9h",
+    "location": "VC",
+    "participants": "3"
+  },
+  {
+    "name": "Réunion 15",
+    "start": "8h",
+    "end": "9h",
+    "location": "SPEC",
+    "participants": "2"
+  },
+  {
+    "name": "Réunion 16",
+    "start": "8h",
+    "end": "9h",
+    "location": "VC",
+    "participants": "12"
+  },
+  {
+    "name": "Réunion 17",
+    "start": "10h",
+    "end": "11h",
+    "location": "VC",
+    "participants": "6"
+  },
+  {
+    "name": "Réunion 18",
+    "start": "11h",
+    "end": "12h",
+    "location": "RS",
+    "participants": "2"
+  },
+  {
+    "name": "Réunion 19",
+    "start": "9h",
+    "end": "10h",
+    "location": "RS",
+    "participants": "4"
+  },
+  {
+    "name": "Réunion 20",
+    "start": "9h",
+    "end": "10h",
+    "location": "RC",
+    "participants": "7"
+  }
+]

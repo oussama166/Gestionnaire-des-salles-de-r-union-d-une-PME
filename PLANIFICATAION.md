@@ -59,17 +59,17 @@
 
 ## Répartition des salles
 
-| Salle | Capacité | Equipements                        | Disponibilité                                   |
-|-------|----------|------------------------------------|-------------------------------------------------|
+| Salle | Capacité | Equipements                        | Disponibilité                                                               |
+|-------|----------|------------------------------------|:-----------------------------------------------------------------------------:|
 | E1001 | 16       | Neant                              |                                                 |
 | E1002 | 7        | Ecran                              |                                                 |
-| E1003 | 5        | Pieuvre                            | 11h-12h (Réunion 3)                             |
+| E1003 | 5        | Pieuvre                            | `11h-12h (Réunion 3)`                             |
 | E1004 | 3        | Tableau                            |                                                 |
 | E2001 | 3        | Neant                              |                                                 |
-| E2002 | 11       | Ecran, Webcam                      | 9h-10h (Réunion 6) <br> 8h-9h (Réunion 8) <br> 9h-10h (Réunion 2) <br> 9h-10h (Réunion 11) <br> 10h-11h (Réunion 17)                                     |
+| E2002 | 11       | Ecran, Webcam                      | `9h-10h (Réunion 6)` <br> `8h-9h (Réunion 8)` <br> `9h-10h (Réunion 2)` <br> `9h-10h (Réunion 11)` <br> `10h-11h (Réunion 17)`                                     |
 | E2003 | 5        | Neant                              |                                                 |
 | E2004 | 6        | Tableau                            |                                                 |
-| E3001 | 9        | Ecran, Webcam, Pieuvre             | 8h-9h (Réunion 7) <br> 9h-10h (Réunion 1) <br> 9h-10h (Réunion 10) <br> 11h-12h (Réunion 12) <br> 11h-12h (Réunion 5) <br> 8h-9h (Réunion 14) <br> 8h-9h (Réunion 16)                                                                                              |
+| E3001 | 9        | Ecran, Webcam, Pieuvre             | `8h-9h (Réunion 7)` <br> `9h-10h (Réunion 1)` <br> `9h-10h (Réunion 10)` <br> `11h-12h (Réunion 12)` <br> `11h-12h (Réunion 5)` <br> `8h-9h (Réunion 14)` <br> `8h-9h (Réunion 16)`                                                                                              |
 | E3002 | 5        | Neant                              |                                                 |
-| E3003 | 6        | Ecran, Pieuvre                     | 11h-12h (Réunion 4) <br> 11h-12h (Réunion 13) <br> 9h-10h (Réunion 9) <br> 11h-12h (Réunion 18)                                                              |
+| E3003 | 6        | Ecran, Pieuvre                     | `11h-12h (Réunion 4)` <br> `11h-12h (Réunion 13)` <br> `9h-10h (Réunion 9)` <br> `11h-12h (Réunion 18)`                                                              |
 | E3004 | 3        | Neant                              |                                                 |

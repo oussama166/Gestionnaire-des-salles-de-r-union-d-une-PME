@@ -24,7 +24,7 @@ export default class RoomService {
 
   async createRooms(roomsData: Room[]) {
     let dataRooms = await prisma.room.createMany({
-      data:roomsData,
+      data: roomsData,
     });
     return dataRooms;
   }
