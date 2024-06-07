@@ -1,6 +1,6 @@
 import { Reservation } from "@prisma/client";
 import { IReservationRepository } from "./Interface/IReservationRepository";
-import { prisma } from "../../../../prisma/prisma";
+import prisma  from "../../../../prisma/prisma";
 
 export class PrismaReservationRepository implements IReservationRepository {
   findReservationByName(

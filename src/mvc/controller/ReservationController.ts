@@ -2,9 +2,19 @@ import { Request, Response } from "express";
 import { PrismaReservationRepository } from "../Service/Repository/PrismaReservationRepository";
 import { ReservationService } from "../Service/ReservationService";
 import { handleErrorResponse } from "../../utils/utilsFunc";
+import { PrismaMeetingRepository } from "../Service/Repository/PrismaMeetingRepository";
+import { PrismaRomRepository } from "../Service/Repository/PrismaRoomRepository";
+import { Meeting } from "@prisma/client";
 
 const reservationRepository = new PrismaReservationRepository();
-const reservationService = new ReservationService(reservationRepository);
+const meetingRepository = new PrismaMeetingRepository();
+const roomRepository = new PrismaRomRepository();
+
+const reservationService = new ReservationService(
+  reservationRepository,
+  meetingRepository,
+  roomRepository
+);
 
 export const createReservation = async (req: Request, res: Response) => {
   try {
@@ -13,31 +23,29 @@ export const createReservation = async (req: Request, res: Response) => {
       return res.status(400).send("Request body is null");
     }
 
-    const reservation = JSON.stringify(getData);
+    const reservation = getData as Meeting;
     const result = await reservationService.createReservation(reservation);
 
     return res.status(201).send(result);
   } catch (err) {
     handleErrorResponse(res, err);
   }
-  
-
 };
 
-export const createReservations = async (req: Request, res: Response) => {
-  try {
-    const data = req.body;
-    if (!data || !Array.isArray(data)) {
-      return res
-        .status(400)
-        .send("Request body is null of the you to format to array !!!");
-    }
-    const result = await reservationService.createReservation(data);
-    return res.status(201).send(`${result} Reservations added susccefuly`);
-  } catch (error) {
-    handleErrorResponse(res, error);
-  }
-};
+// export const createReservations = async (req: Request, res: Response) => {
+//   try {
+//     const data = req.body;
+//     if (!data || !Array.isArray(data)) {
+//       return res
+//         .status(400)
+//         .send("Request body is null of the you to format to array !!!");
+//     }
+//     const result = await reservationService.createReservation(data as Meeting);
+//     return res.status(201).send(`${result} Reservations added susccefuly`);
+//   } catch (error) {
+//     handleErrorResponse(res, error);
+//   }
+// };
 export const showReservation = async (req: Request, res: Response) => {
   try {
     const { meetingName, roomName } = req.body;

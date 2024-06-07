@@ -1,6 +1,6 @@
 import { Room } from "@prisma/client";
 import { IRoomRepository } from "./Repository/Interface/IRoomRepository";
-import { prisma } from "../../../prisma/prisma";
+import prisma  from "../../../prisma/prisma";
 
 export default class RoomService {
   private roomRepository: IRoomRepository;
